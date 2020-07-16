@@ -3,14 +3,115 @@
     <title>Kaio Henrique</title>
     
     <style>
+      body{
+        font-family: Arial;
+      }
+
+      h1{
+        font-size: 25px;
+      }
+
+      h2{
+        font-size: 18px;
+      }
+
+      p{
+        font-size: 15px;
+      }
+
+      .topnav {
+        overflow: hidden;
+        padding: 20px;
+        color: black;
+        background-color: #1C1C1C;
+      }
+
+      .topnav a{
+        float: right;
+      }
+
+      .nav1 {
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        background-color: white;
+      }
+
+      .footer {
+        background-color: #1C1C1C;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      .homelink {
+        padding-left: 40px;
+      }
+
+      .divifeslogo{
+        padding-right: 20px;
+        float: left;
+      }
+
       #ifeslogo{
-        height: 20px;
+        height: 40px;
+      }
+
+      #timao{
+        height: 55px;
+      }
+
+      #home{
+        height: 40px;
+        filter: invert(100%);
+      }
+
+      #home:hover{
+        filter: invert(50%);
+        transition-duration: 0.3s;
+      }
+
+      #ifeslogo:hover{
+        filter: opacity(50%);
+        transition-duration: 0.3s;
+      }
+
+      #timao:hover{
+        filter: opacity(50%);
+        transition-duration: 0.3s;
       }
     </style>
   </head>
   
   <body>
-    <img id="ifeslogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Instituto_Federal_do_Esp%C3%ADrito_Santo_-_Marca_Vertical_2015.svg/1200px-Instituto_Federal_do_Esp%C3%ADrito_Santo_-_Marca_Vertical_2015.svg.png">
-    <h1>Kaio</h1>
+    <div class="topnav">
+
+      <div class="divifeslogo">
+        <a href = "https://ifes.edu.br/" target="_blanck"><img id="ifeslogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Logotipo_IFET.svg/764px-Logotipo_IFET.svg.png"></a>
+      </div>
+
+      <div class = "homeLink">
+        <a href = "index.html"><img id = "home" src = "https://image.flaticon.com/icons/svg/25/25694.svg"/></a>
+      </div>
+
+    </div>
+
+    <nav class="nav1">
+
+      <h1>Kaio Henrique Da Silva Nézio</h1>
+      <h2>Instituto Federal do Espírito Santo (IFES) - Campus Serra</h2>
+      <p>Aluno do curso técnico integrado de Informática para Internet</p>
+
+    </nav>
+
+    <nav class="nav1">
+      <h1>Sou Coringão!</h1>
+    </nav>
+
+    <footer class="footer">
+
+      <a href = "https://www.corinthians.com.br/" target="_blanck"><img id="timao" src="https://i.pinimg.com/originals/47/36/4d/47364d004bdf64f78d736a8cbedde9aa.png"></a>
+
+    </footer>
   </body>
 </html>
