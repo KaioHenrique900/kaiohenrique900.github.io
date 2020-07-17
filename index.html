@@ -1,8 +1,15 @@
+
 <html>
   <head>
     <title>Kaio Henrique</title>
+
     
     <style>
+
+      * {
+        box-sizing: border-box;
+      }
+
       body{
         font-family: Arial;
       }
@@ -19,11 +26,32 @@
         font-size: 15px;
       }
 
-      .topnav {
+
+      div.escolas{
         overflow: hidden;
-        padding: 20px;
+        border: solid;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      header.black{
+        background-color: black;
+        position: absolute;
+        top: 8px;
+        padding: 18px;
+        padding-right: 1315;
+        padding-bottom: 58;
+      }
+
+      .topnav {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+        padding: 18px;
         color: black;
-        background-color: #1C1C1C;
+        background-color: #000000;
+        filter: opacity(70%);
       }
 
       .topnav a{
@@ -37,8 +65,25 @@
         background-color: white;
       }
 
+      .nav2 {
+        text-align: left;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        padding-left: 40px;
+        background-color: white;
+        float: left;
+      }
+
+      .nav3 {
+        text-align: right;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        padding-right: 40px;
+        background-color: white;
+      }
+
       .footer {
-        background-color: #1C1C1C;
+        background-color: #000000;
         padding: 10px;
         text-align: center;
         color: white;
@@ -55,6 +100,7 @@
 
       #ifeslogo{
         height: 40px;
+        opacity: 1;
       }
 
       #timao{
@@ -72,7 +118,7 @@
       }
 
       #ifeslogo:hover{
-        filter: opacity(50%);
+        filter: opacity(70%);
         transition-duration: 0.3s;
       }
 
@@ -80,10 +126,18 @@
         filter: opacity(50%);
         transition-duration: 0.3s;
       }
+
+
     </style>
+
+    
   </head>
   
   <body>
+
+    <header class="black">
+    </header>
+
     <div class="topnav">
 
       <div class="divifeslogo">
@@ -104,9 +158,26 @@
 
     </nav>
 
-    <nav class="nav1">
-      <h1>Sou Coringão!</h1>
-    </nav>
+    <div class="escolas">
+      <nav class="nav2">
+
+        <h2>Ensino Fundamental</h2><hr/>
+        <p>1º ano em <b>EEEFM Iracema Conceição Silva</b></p>
+        <p>2º, 7º, 8º e 9º ano em <b>EMEF Prof.ª Iolanda Schineider Rangel Da Silva</b></p>
+        <p>3º ano em <b>EMEF Chapada Grande</b></p>
+        <p>3º e 4º ano em <b>EMEF Irmã Dulce</b></p>
+        <p>4º, 5º e 6º ano em <b>Escola Municipal Chico Mendes</b></p>
+
+      </nav>
+
+      <nav class="nav3">
+
+        <h2>Ensino Médio</h2><hr/>
+        <p>1º e 2º no <b>Instituto Federal do Espírito Santo - Campus Serra</b></p>
+      </nav>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <footer class="footer">
 
