@@ -10,20 +10,20 @@
       }
 
       body{
-        font-family: Arial;
+        font-family: Calibri;
 
       }
 
       h1{
-        font-size: 25px;
+        font-size: 30px;
       }
 
       h2{
-        font-size: 18px;
+        font-size: 20px;
       }
 
       p{
-        font-size: 15px;
+        font-size: 18px;
       }
 
 
@@ -56,6 +56,39 @@
 
       .topnav a{
         float: right;
+      }
+
+      .divbuttonH{
+        background-color: #000000;
+        border: none;
+        color: white;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        transition-duration: 0.4;
+        border-radius: 6px;
+        padding-right: 20px;
+        float: right;
+      }
+
+      .buttonH{
+        background-color: #000000;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 13px;
+        cursor: pointer;
+        transition-duration: 0.4;
+        border-radius: 6px;
+        float: right;
+      }
+
+      .divbuttonH .buttonH:hover{
+        background-color: #696969;
+        color: black;
       }
 
       .nav1 {
@@ -163,6 +196,11 @@
 
       <div class = "homeLink">
         <a href = "index.html"><img id = "home" src = "https://image.flaticon.com/icons/svg/25/25694.svg"/></a>
+
+        <div class="divbuttonH">
+          <a href = "#pi"><button class = "buttonH">PI</button></a>
+          <a href = "#timao1"><button class = "buttonH">Cortinthians</button></a>
+        </div>
       </div>
 
     </div>
@@ -195,10 +233,15 @@
       </nav>
     </div>
 
-    <div class="nav4">
+    <div id="pi" class="nav4">
       <h1>Projeto Integrador</h1>
       <h2>Feira de Piadas</h2>
-      <p>Este projeto consiste em um App onde os usuários podem visualizar piadas publicadas por outros ou publicar suas próprias piadas, que são separadas em determinadas categorias. Além disso, o App possui um modo de competição, em que os usuários disputam online para saber quem conta as piadas mais engraçadas. Outros usuários fazem o papel de juiz, elegendo as melhores e as piores piadas.</p>
+      <p>Este projeto consiste em um App onde os usuários podem visualizar piadas publicadas por outros ou publicar suas próprias piadas, que são separadas em determinadas categorias. Além disso, o App possui um modo de competição, em que os usuários disputam online para saber quem conta as piadas mais engraçadas. Outros usuários fazem o papel de júri, julgando as melhores e as piores piadas.</p>
+    </div>
+
+    <div id="timao1" class="nav4">
+      <h1>Corinthians</h1>
+      <h2>O Campeão Dos Campeões</h2>
     </div>
 
     <div class="nav5">
