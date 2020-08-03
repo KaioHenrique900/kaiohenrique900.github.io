@@ -2,6 +2,8 @@
   <head>
     <title>Kaio Henrique</title>
 
+    <link rel="icon" href="https://s.yimg.com/iu/api/res/1.2/qxRKZiwu1P2P31Uk8vSsXg--~C/YXBwaWQ9eXNwb3J0cztmaT1maWxsO2g9NTAwO3E9MTAwO3c9NTAw/https://s.yimg.com/xe/i/us/sp/v/soccer/teams/20140625/84/500x500/972.png" type="image/jpg">
+
     
     <style>
 
@@ -183,23 +185,32 @@
 
     </style>
 
+    <script>
+
+      function pos(id){
+        var posY = document.getElementById(id).offsetTop;
+        window.scrollTo(0, posY-40);
+      }
+
+    </script>
+
     
   </head>
   
-  <body>
+  <body  id = "topo">
 
     <div class="topnav">
 
       <div class="divifeslogo">
-        <a href = "https://ifes.edu.br/" target="_blanck"><img id="ifeslogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Logotipo_IFET.svg/764px-Logotipo_IFET.svg.png"></a>
+        <a href = "https://ifes.edu.br/" target="_blanck""><img id="ifeslogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Logotipo_IFET.svg/764px-Logotipo_IFET.svg.png"></a>
       </div>
 
       <div class = "homeLink">
-        <a href = "index.html"><img id = "home" src = "https://image.flaticon.com/icons/svg/25/25694.svg"/></a>
+        <a href = "#topo"><img id = "home" src = "https://image.flaticon.com/icons/svg/25/25694.svg"/></a>
 
         <div class="divbuttonH">
-          <a href = "#pi"><button class = "buttonH">PI</button></a>
-          <a href = "#timao1"><button class = "buttonH">Cortinthians</button></a>
+          <button class = "buttonH" onclick="pos('pi')">PI</button>
+          <button class = "buttonH" onclick="pos('timao1')">Cortinthians</button>
         </div>
       </div>
 
@@ -241,12 +252,28 @@
 
     <div id="timao1" class="nav4">
       <h1>Corinthians</h1>
-      <h2>O Campeão Dos Campeões</h2>
+      <h2>Corinthians Minha Vida! Corinthians Minha História! Corinthians Meu Amor!</h2>
+      <p>Assista abaixo jogos que marcaram a minha vida e a de milhões de corinthianos.</p>
     </div>
 
     <div class="nav5">
-      <h1>Final da Libertadores (2º Jogo) - Corinthians x Boca Juniors</h1>
+      <h1>Final da Libertadores de 2012 (1º Jogo) - Boca Juniors x Corinthians</h1>
+      <iframe src="https://www.youtube.com/embed/2dCAeYzZG6s?controls=1"></iframe>
+    </div>
+
+    <div class="nav5">
+      <h1>Final da Libertadores de 2012 (2º Jogo) - Corinthians x Boca Juniors</h1>
       <iframe src="https://youtube.com/embed/rxtU-IrXVcQ?controls=1"></iframe>
+    </div>
+
+    <div class="nav5">
+      <h1>Final do Mundial de Clubes de 2012 - Corinthians x Chelsea</h1>
+      <iframe src="https://youtube.com/embed/CQZsCQucwMI?controls=1"></iframe>
+    </div>
+
+    <div class="nav5">
+      <h1>Brasileirão de 2015 - Corinthians x São Paulo</h1>
+      <iframe src="https://youtube.com/embed/pN1lYuoElmw?controls=1"></iframe>
     </div>
 
 
