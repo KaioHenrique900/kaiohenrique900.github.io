@@ -54,6 +54,7 @@
         color: black;
         background-color: #000000;
         filter: opacity(100%);
+        z-index: 10;
       }
 
       .topnav a{
@@ -86,6 +87,8 @@
         transition-duration: 0.4;
         border-radius: 6px;
         float: right;
+        font-family: Arial;
+        font-size: 15px;
       }
 
       .divbuttonH .buttonH:hover{
@@ -176,6 +179,21 @@
         transition-duration: 0.3s;
       }
 
+      .divIdolos{
+        text-align: center;
+      }
+
+      #idolos{
+        height:120px;
+        padding: 10px;
+      }
+
+      #idolos:hover{
+        filter: opacity(80%);
+        height: 130px;
+        transition-duration: 0.3s;
+      }
+
       iframe{
         width: 800px;
         height: 400px;
@@ -192,6 +210,18 @@
         window.scrollTo(0, posY-40);
       }
 
+      function mostrarNome(nome){
+        document.getElementById("nome").innerHTML = "<b>"+nome+"</b>";
+      }
+
+      function limpar(){
+        document.getElementById("nome").innerHTML = "";
+      }
+
+      function mostrarVideo(code){
+        document.getElementById("videojogador").innerHTML = "<iframe src='"+code+"'></iframe>";
+      }
+
     </script>
 
     
@@ -202,7 +232,7 @@
     <div class="topnav">
 
       <div class="divifeslogo">
-        <a href = "https://ifes.edu.br/" target="_blanck""><img id="ifeslogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Logotipo_IFET.svg/764px-Logotipo_IFET.svg.png"></a>
+        <a href = "https://ifes.edu.br/" target="_blanck"><img id="ifeslogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Logotipo_IFET.svg/764px-Logotipo_IFET.svg.png"></a>
       </div>
 
       <div class = "homeLink">
@@ -210,7 +240,7 @@
 
         <div class="divbuttonH">
           <button class = "buttonH" onclick="pos('pi')">PI</button>
-          <button class = "buttonH" onclick="pos('timao1')">Cortinthians</button>
+          <button class = "buttonH" onclick="pos('timao1')">Corinthians</button>
         </div>
       </div>
 
@@ -253,7 +283,7 @@
     <div id="timao1" class="nav4">
       <h1>Corinthians</h1>
       <h2>Corinthians Minha Vida! Corinthians Minha História! Corinthians Meu Amor!</h2>
-      <p>Assista abaixo jogos que marcaram a minha vida e a de milhões de corinthianos.</p>
+      <p>Assista abaixo jogos do Coringão que marcaram a minha vida e a de milhões de corinthianos.</p>
     </div>
 
     <div class="nav5">
@@ -274,6 +304,41 @@
     <div class="nav5">
       <h1>Brasileirão de 2015 - Corinthians x São Paulo</h1>
       <iframe src="https://youtube.com/embed/pN1lYuoElmw?controls=1"></iframe>
+    </div>
+
+    <div id="timao1" class="nav4">
+      <center><h1>Ídolos Da Década de 2010</h1>
+      <h2>Abaixo você pode ver alguns jogadores que fizeram a alegria da Fiel Torcida na década passada.</h2><center>
+      <p id="nome"></p>
+      <div class="divIdolos">
+        <img id="idolos" src="images/alessandro.png" alt="Alessandro" onmouseover="mostrarNome('Alessandro')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/Y7LiejrSQpU?controls=1')">
+        <img id="idolos" src="images/chicao.png" alt="Chicão" onmouseover="mostrarNome('Chicão')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/0NIC8ZWpysA?controls=1')">
+        <img id="idolos" src="images/castan.png" alt="Castan" onmouseover="mostrarNome('Leandro Castán')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/8GipzJQ0xmI?controls=1')">
+        <img id="idolos" src="images/danilo.png" alt="Danilo" onmouseover="mostrarNome('Danilo')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/3Ad7sJeyh8g?controls=1')">
+        <img id="idolos" src="images/alex.png" alt="Alex" onmouseover="mostrarNome('Alex')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/ayoQ6cAaxHc?controls=1')">
+        <img id="idolos" src="images/paulinho.png" alt="Paulinho" onmouseover="mostrarNome('Paulinho')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/JYNkyJxCqa8?controls=1')">
+        <img id="idolos" src="images/ralf.png" alt="Ralf" onmouseover="mostrarNome('Ralf')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/yc-Wawg43TA?controls=1')">
+        <img id="idolos" src="images/sheik.png" alt="Sheik" onmouseover="mostrarNome('Sheik')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/XzMTW9k_fc8?controls=1')">
+        <img id="idolos" src="images/romarinho.png" alt="Romarinho" onmouseover="mostrarNome('Romarinho')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/IlecQ7hy3OU?controls=1')">
+        <img id="idolos" src="images/liedson.png" alt="Liedson" onmouseover="mostrarNome('Liedson')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/CTfMC5pB59I?controls=1')">
+        <img id="idolos" src="images/fabiosantos.png" alt="Fabio Santos" onmouseover="mostrarNome('Fábio Santos')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/QsoaIqc1t3o?controls=1')">
+        <img id="idolos" src="images/jorgehenrique.png" alt="Jorge Henrique" onmouseover="mostrarNome('Jorge Henrique')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/Zp4pbut8IlY?controls=1')">
+        <img id="idolos" src="images/guerrero.png" alt="Guerrero" onmouseover="mostrarNome('Paolo Guerrero')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/U1fcNWKPnRA?controls=1')">
+        <img id="idolos" src="images/cassio.png" alt="Cássio" onmouseover="mostrarNome('Cássio')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/AL1hBk6N4y4?controls=1')">
+        <img id="idolos" src="images/jo.png" alt="Jo" onmouseover="mostrarNome('Jô')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/BMp7mHstcTY?controls=1')">
+        <img id="idolos" src="images/malcom.png" alt="Malcom" onmouseover="mostrarNome('Malcom')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/zxAgWUbAUqg?controls=1')">
+        <img id="idolos" src="images/fagner.png" alt="Fagner" onmouseover="mostrarNome('Fagner')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/lH0iF3d2eVE?controls=1')">
+        <img id="idolos" src="images/gil.png" alt="Gil" onmouseover="mostrarNome('Gil')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/FzqiQpeCDt4?controls=1')">
+        <img id="idolos" src="images/jadson.png" alt="Jadson" onmouseover="mostrarNome('Jadson')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/rX3atNyZ5pc?controls=1')">
+        <img id="idolos" src="images/elias.png" alt="Elias" onmouseover="mostrarNome('Elias')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/1tVsj0hGq1w?controls=1')">
+        <img id="idolos" src="images/renatoaugusto.png" alt="Renato Augusto" onmouseover="mostrarNome('Renato Augusto')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/RsuBCySEN34?controls=1')">
+        <img id="idolos" src="images/rodriguinho.png" alt="Rodriguinho" onmouseover="mostrarNome('Rodriguinho')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/9QShKCPlvVc?controls=1')">
+        <img id="idolos" src="images/felipe.png" alt="Felipe" onmouseover="mostrarNome('Felipe')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/0lPdxTX7WAY?controls=1')">
+        <img id="idolos" src="images/arana.png" alt="Arana" onmouseover="mostrarNome('Arana')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/Row4pTnSh0Q?controls=1')">
+        <img id="idolos" src="images/balbuena.png" alt="Balbuena" onmouseover="mostrarNome('Balbuena')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/378Qjuseqx0?controls=1')">
+        <img id="idolos" src="images/love.png" alt="Love" onmouseover="mostrarNome('Love')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/ej0TxBCTicw?controls=1')">
+      </div>
+      <div id="videojogador">
     </div>
 
 
