@@ -2,7 +2,11 @@
   <head>
     <title>Kaio Henrique</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="icon" href="https://s.yimg.com/iu/api/res/1.2/qxRKZiwu1P2P31Uk8vSsXg--~C/YXBwaWQ9eXNwb3J0cztmaT1maWxsO2g9NTAwO3E9MTAwO3c9NTAw/https://s.yimg.com/xe/i/us/sp/v/soccer/teams/20140625/84/500x500/972.png" type="image/jpg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     
     <style>
@@ -13,6 +17,7 @@
 
       body{
         font-family: Calibri;
+        z-index:0;
 
       }
 
@@ -36,14 +41,6 @@
         margin-bottom: 20px;
       }
 
-      /*header.black{
-        background-color: black;
-        position: absolute;
-        top: 8px;
-        padding: 18px;
-        padding-right: 1315;
-        padding-bottom: 58;
-      }*/
 
       .topnav {
         position: -webkit-sticky;
@@ -92,8 +89,7 @@
       }
 
       .divbuttonH .buttonH:hover{
-        background-color: #696969;
-        color: black;
+        color: gray;
       }
 
       .nav1 {
@@ -156,7 +152,8 @@
       }
 
       #timao{
-        height: 55px;
+        height: 45px;
+        padding-right: 15px;
       }
 
       #home{
@@ -192,6 +189,7 @@
         filter: opacity(80%);
         height: 130px;
         transition-duration: 0.3s;
+        cursor: pointer;
       }
 
       iframe{
@@ -308,8 +306,7 @@
 
     <div id="timao1" class="nav4">
       <center><h1>Ídolos Da Década de 2010</h1>
-      <h2>Abaixo você pode ver alguns jogadores que fizeram a alegria da Fiel Torcida na década passada.</h2><center>
-      <p id="nome"></p>
+      <h2>Abaixo você pode conhencer um pouco de alguns jogadores que fizeram a alegria da Fiel Torcida na década passada.</h2><center>
       <div class="divIdolos">
         <img id="idolos" src="images/alessandro.png" alt="Alessandro" onmouseover="mostrarNome('Alessandro')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/Y7LiejrSQpU?controls=1')">
         <img id="idolos" src="images/chicao.png" alt="Chicão" onmouseover="mostrarNome('Chicão')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/0NIC8ZWpysA?controls=1')">
@@ -338,13 +335,14 @@
         <img id="idolos" src="images/balbuena.png" alt="Balbuena" onmouseover="mostrarNome('Balbuena')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/378Qjuseqx0?controls=1')">
         <img id="idolos" src="images/love.png" alt="Love" onmouseover="mostrarNome('Love')" onmouseout="limpar()" onclick="mostrarVideo('https://youtube.com/embed/ej0TxBCTicw?controls=1')">
       </div>
-      <div id="videojogador">
+      <div id="videojogador"></div>
     </div>
 
 
     <footer class="footer">
 
-      <a href = "https://www.corinthians.com.br/" target="_blanck"><img id="timao" src="https://i.pinimg.com/originals/47/36/4d/47364d004bdf64f78d736a8cbedde9aa.png"></a>
+      <a href="https://github.com/KaioHenrique900" target="_blanck"><img id="timao" src="https://luvintech.com/img/github.png"></a>
+      <a href="https://www.corinthians.com.br/" target="_blanck"><img id="timao" src="https://upload.wikimedia.org/wikipedia/pt/b/b4/Corinthians_simbolo.png"></a>
 
     </footer>
   </body>
